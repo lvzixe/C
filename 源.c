@@ -1,18 +1,10 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-#include <stdio.h>
- int MAX(int x, int y)
+#include <stdio.h>//std-标准 standard input output  文件stdio.h
+//使用库函数要和C语言打个招呼-#include
+//int 整型
+//main前面的int表示main函数调用返回一个整型值
+int main()//主函数-程序的入口-main函数-有且仅有一个
 {
-	if (x > y)
-		return x;
-	else
-		return y;//将结果返回至函数MAX
-}
-int main()
-{
-	int num1 = 10;
-	int num2 = 20;
-	int max = 0;
-	max = MAX(num1, num2);//设置变量max来接收MAX函数值
-	printf("max=%d\n", max);
-	return 0;
+	printf("hello world\n");//printf-print function-打印函数，是库函数(C语言本身提供使用的函数)  
+	                       //\n-表示换行
+	return 0;//返回 0
 }
